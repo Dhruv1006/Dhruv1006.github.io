@@ -1,13 +1,15 @@
     //Swiper slider
-    var swiper = new Swiper(".bg-slider-thumbs", {
-    
-        loop: true,
-        spaceBetween: 0,
-        slidesPerView: 0,
+    var swiper = new Swiper(".swiper", {
+      slidesPerView: 1,
+      spaceBetween: 30,
+      loop: true,
+      autoplay: {
+        delay: 5000, // Change slide every 5 seconds
+      },
     });
     var swiper2 = new Swiper(".bg-slider", {
         loop: true,
-        spaceBetween: 0,
+        spaceBetween: 30,
         thumbs: {
             swiper: swiper,
         },
